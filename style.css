@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(images.jpeg);
+    ;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: #A2AADB;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    margin: auto;
+    box-shadow: 10 10 10px rgba(0.1,0.1,0.1,0.1);
+    align-items: center;
+}
+
+
+input {
+    padding: 10px;
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+button {
+    align-items: center;
+    padding: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    
+}
+
+button:hover{
+    background-color: #a443d1;
+}
+
+li {
+
+    list-style: none;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #fffcfc;
+}
+
+#taskList {
+  counter-reset: task-counter;
+}
+
+#taskList li::before {
+  counter-increment: task-counter;
+  content: counter(task-counter) ". ";
+  font-weight: bold;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
